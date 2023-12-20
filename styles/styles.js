@@ -1,8 +1,8 @@
 window.addEventListener('scroll', function() {
     
-    const navbar = document.querySelector('.navbar');
-    const logoImg = document.getElementById('logoImg');
-    const companyName = document.getElementById('companyName');
+    const navbar = document.querySelector('.navbarpaula');
+    const logoImg = document.getElementById('logoImgpaula');
+    const companyName = document.getElementById('companyNamepaula');
     const initLink = document.getElementById('initLink');
     const usLink = document.getElementById('usLink');
     const productLink = document.getElementById('productLink');

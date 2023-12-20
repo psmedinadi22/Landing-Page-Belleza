@@ -15,7 +15,7 @@ body {
   
   }
   
-  .navbar {
+  .navbarpaula {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -29,13 +29,13 @@ body {
    
   }
   
-  .navbar.scrolled {
+  .navbarpaula.scrolled {
     background-color: #ffffff; /* Fondo blanco al bajar la página */
   }
   
-  /* ... (otros estilos) ... */
 
-.menu {
+
+.menupaula {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -43,34 +43,34 @@ body {
     color: #fff; /* Texto blanco */
   }
   
-  .logo {
+  .logopaula {
     display: flex;
     align-items: center;
   }
   
-  .logo img {
+  .logopaula img {
     width: 70px; /* Ancho de la imagen del logo */
     height: auto;
     margin-right: 10px;
   }
   
-  .company-name {
+  .company-namepaula {
     font-weight: bold;
     font-size: 1.2em; /* Tamaño del texto del nombre de la empresa */
   }
   
   
-  .menu ul {
+  .menupaula ul {
     list-style: none;
     display: flex;
     gap: 20px;
   }
   
-  .menu ul li {
+  .menupaula ul li {
     transition: color 0.5s;
   }
   
-  .menu ul li a {
+  .menupaula ul li a {
     text-decoration: none;
     color: inherit;
     transition: color 0.5s;
@@ -86,7 +86,7 @@ body {
   
   .content {
     height: 2000px; /* Solo para propósitos de demostración */
-    padding-top: 100px; /* Ajusta el espacio para que no se solape el contenido bajo el menú */
+    padding-top: 100px; 
   }
   
 
