@@ -86,8 +86,11 @@ body {
   
   
   .content {
-    height: 2000px; /* Solo para propósitos de demostración */
     padding-top: 100px; 
+  }
+
+  .linksContact {
+    color: var(--bs-pink-dark);
   }
 
   /* ... (otros estilos) ... */
@@ -233,6 +236,9 @@ body {
     border-radius: 5px;
   }
   
+  #contacto {
+    color:#BCA0A0;
+  }
 
   
 
