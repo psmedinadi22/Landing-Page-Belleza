@@ -1,3 +1,4 @@
+let menuOpen = false;
 window.addEventListener('scroll', function() {
     const navbar = document.querySelector('.navbarpaula');
     const logoImg = document.getElementById('logoImgpaula');
@@ -8,7 +9,7 @@ window.addEventListener('scroll', function() {
     const contactLink = document.getElementById('contactLink');
     const mobileMenuIconBars = document.querySelectorAll('.mobile-menu-icon .bar'); // Selección de las tres barras
   
-    if (window.scrollY > 50) {
+    if (!menuOpen && window.scrollY > 50) {
       navbar.classList.add('scrolled');
       logoImg.src = 'images/logoNegro.png'; // Cambia a la versión del logo negro
       companyName.style.color = '#4B4234'; // Cambia el color del nombre de la empresa
@@ -39,5 +40,6 @@ window.addEventListener('scroll', function() {
     const menuItems = document.querySelector('.menupaula ul');
     this.classList.toggle('open');
     menuItems.classList.toggle('active');
+    menuOpen = !menuOpen;
   });
   
