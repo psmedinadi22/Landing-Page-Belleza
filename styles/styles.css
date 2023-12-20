@@ -180,6 +180,10 @@ body {
     padding: 10px 20px;
 }
 
+.banner-text {
+  margin-top: 50px;
+}
+
 /* SOBRE NOSOTROS */
 .btn-us {
     background-color: var(--bs-pink)!important;
