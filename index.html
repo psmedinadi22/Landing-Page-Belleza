@@ -8,36 +8,88 @@
     
     <link rel="stylesheet" href="styles/styles.css">
     <link rel="stylesheet" href="styles/styles.js">
+
+
+     <!-- Font Awesome -->
+     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet" />
+     <!-- Google Fonts -->
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link
+         href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700&family=Oregano&family=Raleway:wght@400;600&family=Roboto&family=Roboto+Condensed&display=swap"
+         rel="stylesheet">
+         <!-- MDB -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/7.1.0/mdb.min.css" rel="stylesheet" />
+    <!-- favicon.io -->
+     <link rel="icon" href="images/logoNegro.png">
 </head>
 
  <body>
 <!-- Scripts -->
 
- 
+
+<!-- Header -->
+<div class="navbar">
+    <div class="logo">
+      <img id="logoImg" src="images/logoBlanco.png" alt="Logo">
+      <span id="companyName">GlowVerse Cosmetics</span>
+    </div>
+    <div class="menu">
+      <ul>
+        <li><a href="#inicio" id="initLink">Inicio</a></li>
+        <li><a href="#nosotros" id="usLink">Nosotros</a></li>
+        <li><a href="#productos" id="productLink">Productos</a></li>
+        <li><a href="#contacto" id="contactLink">Contacto</a></li>
+      </ul>
+    </div>
+  </div>
+
+<!-- Banner -->
+<section id="banner">
+    <section class="position-relative main-message">
+        <img class="img-fluid w-100" src="images/main.png" alt="Imagen maquillaje">
+        <div
+            class="d-flex flex-column gap-5 align-items-center position-absolute top-50 start-50 translate-middle text-center text-white">
+            <h2>Brilla con tu propia luz</h2>
+            <p>En GlowVerse, creemos en la magia del maquillaje. Somos mucho más que una marca de productos de
+                belleza; somos una comunidad vibrante, una celebración de la individualidad y la creatividad.
+            </p>
+            <button class="btn btn-sm btn-lg btn-outline-light btn-main"
+                onclick="window.location.href='#us'">conoce más</button>
+        </div>
+    </section> 
+
+
+
     
 
 <!-- Page Wrapper -->
 <div id="page-wrapper">
 
-    <!-- Header -->
-    <header>
-        <nav class="menu">
-          <div class="logo">
-            <img src="images/logoNegro.png" alt="Logo de la empresa">
-            <span>GlowVerse Cosmetics</span>
-          </div>
-          <ul class="menu-items">
-            <li><a href="#inicio">Inicio</a></li>
-            <li><a href="#nosotros">Nosotros</a></li>
-            <li><a href="#productos">Productos</a></li>
-            <li><a href="#contacto" class="oval">Contacto</a></li>
-          </ul>
-        </nav>
-      </header>
+    
 
-    <!-- Banner -->
-    <section id="banner">
-        
+      <!-- Nosotros -->
+      <section id="us" class="wrapper us">
+        <div class="row align-items-center justify-content-center gap-5 px-4 my-5">
+            <div class="col-md-5">
+                <h2 class="py-4">Sobre nosotros</h2>
+                <p class="py-3">En GlowVerse, no solo creamos productos de belleza excepcionales; creamos
+                    experiencias que
+                    inspiran la autoexpresión y la creatividad. Únete a nosotros en este viaje hacia la
+                    autoaceptación, la individualidad y la celebración de la diversidad. Juntos, formamos
+                    parte
+                    de
+                    un universo brillante donde la belleza es sinónimo de autenticidad.
+                </p>
+                <button class="btn btn-us" onclick="window.location.href='#productos'">Conoce nuestros
+                    productos</button>
+            </div>
+            <div class="col-md-5">
+                <img class="img-fluid" src="images/maquillando.png" alt="Persona maquillando">
+            </div>
+        </div>
+
+
     </section>
 
 
@@ -51,6 +103,7 @@
 
         <!-- Productos -->
         
+
 
 <section id="productos" class="productos-section">
     <div class="container">
@@ -77,36 +130,8 @@
             <p class="price">$XX.XX</p>
             <a href="#" class="btn">Conoce más</a>
           </div>
-          <div class="product-card">
-            <img src="images/brochas.png" alt="Producto 1">
-            <h3>Nombre del Producto 1</h3>
-            <p class="price">$XX.XX</p>
-            <a href="#" class="btn">Conoce más</a>
-          </div>
-          <div class="product-card">
-            <img src="images/polvos.png" alt="Producto 1">
-            <h3>Nombre del Producto 1</h3>
-            <p class="price">$XX.XX</p>
-            <a href="#" class="btn">Conoce más</a>
-          </div>
-          <div class="product-card">
-              <img src="images/sombras.png" alt="Producto 1">
-              <h3>Nombre del Producto 1</h3>
-              <p class="price">$XX.XX</p>
-              <a href="#" class="btn">Conoce más</a>
-            </div>
-            <div class="product-card">
-              <img src="images/base.png" alt="Producto 1">
-              <h3>Nombre del Producto 1</h3>
-              <p class="price">$XX.XX</p>
-              <a href="#" class="btn">Conoce más</a>
-            </div>
-            <div class="product-card">
-              <img src="images/brochas.png" alt="Producto 1">
-              <h3>Nombre del Producto 1</h3>
-              <p class="price">$XX.XX</p>
-              <a href="#" class="btn">Conoce más</a>
-            </div>
+          
+         
       </div>
     </div>
   </section>
@@ -119,9 +144,87 @@
             
         </section>
 
+
+        
+
     </section>
+
+
+    
     
 </div>
+
+
+<!-- Footer -->
+<footer class="text-center text-lg-start bg-body-tertiary text-muted footer-color">
+    <!-- Section: Links  -->
+    <section class="footer-color border-top">
+        <div class="container text-center text-md-start mt-5">
+            <!-- Grid row -->
+            <div class="row mt-3 justify-content-center">
+                <!-- Grid column -->
+                <div class="col-md-5 col-lg-4 col-xl-3 mx-auto mb-4">
+                    <!-- Content -->
+                    <h6 class="text-uppercase fw-bold mb-4">
+                        <img class="logo" src="images/logoBlanco.png" alt="Logo GlowVerse">GlowVerse Cosmetics
+                    </h6>
+                    <p>
+                        Bienvenido/a a GlowVerse Cosmetics, donde la belleza se encuentra con la autenticidad y la
+                        diversidad se celebra en cada tono y textura.
+                    </p>
+                </div>
+                <!-- Grid column -->
+
+                <!-- Grid column -->
+                <div class="col-md-5 col-lg-4 col-xl-2 mx-auto mb-4 text-center">
+                    <!-- Links -->
+                    <h6 class="text-uppercase fw-bold mb-4">
+                        Productos
+                    </h6>
+                    <p>
+                        <a href="#productos" class="text-reset">Bases y polvos</a>
+                    </p>
+                    <p>
+                        <a href="#productos" class="text-reset">Labiales</a>
+                    </p>
+                    <p>
+                        <a href="#productos" class="text-reset">Sombras</a>
+                    </p>
+                    <p>
+                        <a href="#productos" class="text-reset">Brochas</a>
+                    </p>
+                </div>
+                <!-- Grid column -->
+
+                <!-- Grid column -->
+                <div class="col-md-6 col-lg-4 col-xl-3 mx-auto mb-md-0 mb-4">
+                    <!-- Links -->
+                    <h6 class="text-uppercase fw-bold mb-4">Contacto</h6>
+                    <p><i class="fas fa-home me-3"></i> Bogotá, Colombia</p>
+                    <p>
+                        <i class="fas fa-envelope me-3"></i>
+                        atencion@glowversecosmetics.com
+                    </p>
+                    <p><i class="fas fa-phone me-3"></i> + 57 234 55 55</p>
+                </div>
+                <!-- Grid column -->
+            </div>
+            <!-- Grid row -->
+        </div>
+    </section>
+    <!-- Section: Links  -->
+
+    <!-- Copyright -->
+    <div class="text-center p-4 text-white" style="background-color: rgba(0, 0, 0, 0.05);">
+        © 2023 Copyright:
+        <a href="https://github.com/psmedinadi22/Landing-Page-Belleza" target="_blank" class="me-4 text-reset">
+            Equipo 8 Generation
+            <i class="fab fa-github"></i>
+        </a>
+    </div>
+    <!-- Copyright -->
+</footer>
+<!-- Footer -->
 
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
