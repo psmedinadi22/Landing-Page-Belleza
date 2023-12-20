@@ -4,3 +4,131 @@
     /* Ejemplo para llamar las variables
     background-color: var(--bs-pink)!important; */
 }
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #fff; /* Fondo blanco por defecto */
+    color: #4B4234; /* Color de texto por defecto */
+    transition: background-color 0.3s ease, color 0.3s ease; /* Transición suave al cambiar el fondo y el color del texto */
+  }
+  
+  header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    background-color: transparent; /* Fondo transparente */
+  }
+  
+  .menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    color: #fff; /* Texto blanco */
+  }
+  
+  .menu-items {
+    list-style: none;
+    display: flex;
+  }
+  
+  .menu-items li {
+    margin-right: 20px;
+  }
+  
+  .menu-items li:last-child {
+    margin-right: 0;
+  }
+  
+  .menu-items li a {
+    color: #fff; /* Texto blanco */
+    text-decoration: none;
+    transition: color 0.3s ease; /* Transición suave al cambiar el color del texto */
+  }
+  
+  .menu-items li a:hover {
+    color: #4B4234; /* Color del texto al pasar el cursor */
+  }
+  
+  .logo img {
+    width: 50px; /* Ancho de la imagen del logo */
+    height: auto;
+    margin-right: 10px;
+  }
+  
+  .logo span {
+    font-weight: bold;
+  }
+  
+  .oval {
+    border-radius: 50px; /* Para hacer el botón de contacto ovalado */
+    padding: 5px 15px; /* Ajusta el padding según necesites */
+    background-color: #fff; /* Color de fondo del botón de contacto */
+    color: #4B4234; /* Color de texto del botón de contacto */
+  }
+  
+
+
+
+.productos-section {
+    text-align: center;
+    padding: 50px 0;
+  }
+  
+  .section-title {
+    font-size: 2em;
+    margin-bottom: 20px;
+  }
+  
+  .section-description {
+    font-size: 1.1em;
+    color: #4B4234;
+    margin-bottom: 40px;
+  }
+  
+  .products-carousel {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+  
+  .product-card {
+    width: 250px;
+    margin-bottom: 30px;
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+  }
+  
+  .product-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    margin-bottom: 10px;
+  }
+  
+  .product-card h3 {
+    margin-bottom: 5px;
+  }
+  
+  .price {
+    font-weight: bold;
+    color: #4B4234;
+    margin-bottom: 10px;
+  }
+  
+  .btn {
+    display: inline-block;
+    padding: 5px 15px;
+    text-decoration: none;
+    background-color: #4B4234;
+    color: #fff;
+    border-radius: 5px;
+  }
+  
+
+  
