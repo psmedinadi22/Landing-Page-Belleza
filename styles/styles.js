@@ -1,5 +1,4 @@
 window.addEventListener('scroll', function() {
-    
     const navbar = document.querySelector('.navbarpaula');
     const logoImg = document.getElementById('logoImgpaula');
     const companyName = document.getElementById('companyNamepaula');
@@ -7,7 +6,7 @@ window.addEventListener('scroll', function() {
     const usLink = document.getElementById('usLink');
     const productLink = document.getElementById('productLink');
     const contactLink = document.getElementById('contactLink');
-    
+    const mobileMenuIconBars = document.querySelectorAll('.mobile-menu-icon .bar'); // Selección de las tres barras
   
     if (window.scrollY > 50) {
       navbar.classList.add('scrolled');
@@ -18,48 +17,27 @@ window.addEventListener('scroll', function() {
       productLink.style.color = '#4B4234';
       contactLink.style.color = '#4B4234';
       contactLink.style.borderColor = '#4B4234';
-      
+      mobileMenuIconBars.forEach(bar => {
+        bar.style.backgroundColor = '#4B4234'; // Cambia el color de fondo de cada barra del icono
+      });
     } else {
       navbar.classList.remove('scrolled');
       logoImg.src = 'images/logoBlanco.png'; 
       companyName.style.color = '#ffffff'; 
       initLink.style.color = '#ffffff';
       usLink.style.color = '#ffffff';
-      productLink.style.color = '#ffffff';;
+      productLink.style.color = '#ffffff';
       contactLink.style.color = '#ffffff';
       contactLink.style.borderColor = '#ffffff';
+      mobileMenuIconBars.forEach(bar => {
+        bar.style.backgroundColor = '#ffffff'; // Restaura el color de fondo de cada barra del icono
+      });
     }
-
-    const header = document.querySelector('.navbarpaula');
-    const body = document.body;
-    const contactButton = document.querySelector('.mobile-menu-icon');
-  
-    if (window.scrollY > 0) {
-      header.style.backgroundColor = '#fff'; /* Cambia el fondo del encabezado al hacer scroll */
-      body.style.backgroundColor = '#fff'; /* Cambia el fondo del cuerpo al hacer scroll */
-      body.style.color = '#4B4234'; /* Cambia el color del texto al hacer scroll */
-      contactButton.classList.add('scrolled'); /* Añade una clase para cambiar el color del ícono */
-    } else {
-      header.style.backgroundColor = 'transparent'; /* Fondo transparente cuando se encuentra en la parte superior */
-      body.style.backgroundColor = '#fff'; /* Fondo blanco cuando se encuentra en la parte superior */
-      body.style.color = '#4B4234'; /* Color de texto cuando se encuentra en la parte superior */
-      contactButton.classList.remove('scrolled'); /* Remueve la clase para restaurar el color del ícono */
-    }
-
   });
-
-
+  
   document.querySelector('.mobile-menu-icon').addEventListener('click', function() {
     const menuItems = document.querySelector('.menupaula ul');
     this.classList.toggle('open');
     menuItems.classList.toggle('active');
   });
-  ;
   
-
-  
-
- 
-
-  
-

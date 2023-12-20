@@ -58,6 +58,7 @@ body {
   .company-namepaula {
     font-weight: bold;
     font-size: 1.2em; /* Tamaño del texto del nombre de la empresa */
+  
   }
   
   
@@ -100,15 +101,21 @@ body {
 
 /* Estilos para tamaños de pantalla menores (menú hamburguesa) */
 @media screen and (max-width: 768px) {
-  .menupaula ul {
-    display: none;
-    flex-direction: column;
-    position: absolute;
-    top: 60px;
-    left: 0;
-    width: 100%;
-    background-color: #333; /* Cambia el color del fondo del menú hamburguesa */
-  }
+    .menupaula ul {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 60%; /* Limita el ancho del menú al 60% */
+        max-width: 250px; /* Establece un máximo de ancho para el menú */
+        background-color: #333; /* Cambia el color del fondo del menú hamburguesa */
+        border-radius: 5px; /* Agrega bordes redondeados al menú */
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Agrega una sombra al menú */
+        z-index: 1000; /* Asegura que el menú esté encima de otros elementos */
+        left: 50%;
+    transform: translateX(-50%);
+      }
 
   .menupaula ul.active {
     display: flex;
