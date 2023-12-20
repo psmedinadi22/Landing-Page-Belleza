@@ -280,4 +280,8 @@ body {
   .main-message img {
       height: 60vh;
   }
+
+  .banner-text {
+    margin-top: 40px;
+  }
 }
