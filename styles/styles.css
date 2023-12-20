@@ -89,6 +89,70 @@ body {
     height: 2000px; /* Solo para propósitos de demostración */
     padding-top: 100px; 
   }
+
+  /* ... (otros estilos) ... */
+/* Estilos por defecto */
+.menupaula ul {
+  display: flex;
+  list-style-type: none;
+  align-items: center;
+}
+
+/* Estilos para tamaños de pantalla menores (menú hamburguesa) */
+@media screen and (max-width: 768px) {
+  .menupaula ul {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    background-color: #333; /* Cambia el color del fondo del menú hamburguesa */
+  }
+
+  .menupaula ul.active {
+    display: flex;
+  }
+
+  .menupaula ul li {
+    text-align: center;
+    margin: 10px 0;
+  }
+
+  .mobile-menu-icon {
+    display: block;
+    cursor: pointer;
+    padding: 10px;
+    transition: color 0.3s ease;
+    
+  }
+  .mobile-menu-icon.scrolled {
+    color: #4B4234; /* Cambia el color del ícono al hacer scroll */
+  }
+
+  .mobile-menu-icon .bar {
+    width: 25px;
+    height: 3px;
+    background-color: #fff;
+    margin: 5px 0;
+    transition: 0.4s;
+  }
+
+  .mobile-menu-icon.open .bar:nth-child(1) {
+    transform: rotate(-45deg) translate(-5px, 6px);
+  }
+
+  .mobile-menu-icon.open .bar:nth-child(2) {
+    opacity: 0;
+  }
+
+  .mobile-menu-icon.open .bar:nth-child(3) {
+    transform: rotate(45deg) translate(-5px, -6px);
+  }
+  
+}
+
+  
   
 
 
@@ -178,10 +242,6 @@ body {
 
 .main-message button {
     padding: 10px 20px;
-}
-
-.banner-text {
-  margin-top: 50px;
 }
 
 /* SOBRE NOSOTROS */
