@@ -1,0 +1,6 @@
+:root {
+    --bs-gray: #F1F1F1;
+    --bs-pink: #BCA0A0;
+    /* Ejemplo para llamar las variables
+    background-color: var(--bs-pink)!important; */
+}
