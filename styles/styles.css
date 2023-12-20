@@ -251,6 +251,12 @@ body {
     padding: 10px 20px;
 }
 
+.main-message img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
 /* SOBRE NOSOTROS */
 .btn-us {
     background-color: var(--bs-pink)!important;
