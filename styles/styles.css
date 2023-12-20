@@ -1,8 +1,9 @@
 :root {
-    --bs-gray: #F1F1F1;
-    --bs-pink: #BCA0A0;
-    /* Ejemplo para llamar las variables
-    background-color: var(--bs-pink)!important; */
+  --bs-gray: #F1F1F1;
+  --bs-pink: #BCA0A0;
+  --bs-pink-dark: #916d6d;
+  /* Ejemplo para llamar las variables
+  background-color: var(--bs-pink)!important; */
 }
 
 body {
@@ -165,22 +166,14 @@ body {
 
   
 
-  @media (max-width:600px) {
-    .main-message {
-        font-size: 10px;
-
-    }
-
-    .main-message img {
-        height: 60vh;
-    }
-}
+  
 
 
   /* main */
 .btn-main:hover {
-    color: var(--bs-pink-dark);
+    color: var(--bs-pink-dark)!important;
     font-weight: bold;
+    background-color: #D1C8C1!important;
 }
 
 .main-message button {
@@ -189,16 +182,31 @@ body {
 
 /* SOBRE NOSOTROS */
 .btn-us {
-    background-color: var(--bs-pink);
-    color: white;
-    font-weight: bold;
+    background-color: var(--bs-pink)!important;
+    color: white!important;
+    font-weight: bold!important;
 }
 
 .footer-color {
-    background-color: var(--bs-pink) !important;
+    background-color: var(--bs-pink)!important;
     color: white;
 }
 
 .logo1 {
     width: 50px;
+}
+
+.footer-copyright {
+  background-color: rgba(0, 0, 0, 0.05)!important;
+}
+
+@media (max-width:600px) {
+  .main-message {
+      font-size: 10px;
+
+  }
+
+  .main-message img {
+      height: 60vh;
+  }
 }
